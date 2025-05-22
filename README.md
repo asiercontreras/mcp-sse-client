@@ -20,7 +20,15 @@ This repository provides an automation framework for running Gherkin-based end-t
    Ensure you have Python 3.13+ and [uv](https://github.com/astral-sh/uv) installed.  
    Install dependencies:
    ```sh
-   uv pip install -r requirements.txt
+   # Create virtual environment
+   uv venv
+   
+   # Activate virtual environment
+   # On Windows:
+   .venv\Scripts\activate
+   # On Unix or MacOS:
+   source .venv/bin/activate
+   uv add mcp anthropic python-dotenv litellm openai
    ```
 
 2. **Configure environment**  
