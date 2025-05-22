@@ -120,7 +120,7 @@ def main(prompts, total, model):
             shutil.move(file_path, test_folder)
 
         # 3. Copy all .spec.ts files from the specific absolute directory to the created directory
-        spec_dir = "/home/asier/Escritorio/original/playwright-mcp/tests"
+        spec_dir = ""# Add your directory
         spec_files = [f for f in os.listdir(spec_dir) if f.endswith(".spec.ts")]
         for spec_file in spec_files:
             source_file = os.path.join(spec_dir, spec_file)
@@ -128,7 +128,7 @@ def main(prompts, total, model):
             print(f"Copied {spec_file} to {test_folder}")
 
         # 4. Copy log files from the reports directory to the test folder
-        log_dir = "/home/asier/Escritorio/original/playwright-mcp/reports"
+        log_dir = ""# Add your directory
         log_files = [f for f in os.listdir(log_dir) if f.endswith(".log")]
         for log_file in log_files:
             source_file = os.path.join(log_dir, log_file)
